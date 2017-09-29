@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane fx:id="staffAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.BookingController">
+   <children>
+      <Button layoutX="23.0" layoutY="459.0" mnemonicParsing="false" onAction="#addBookingBtn" text="Add" />
+      <TableView fx:id="bookingTable" layoutX="286.0" layoutY="38.0" onMouseClicked="#onTableClick" prefHeight="403.0" prefWidth="395.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="92.0" text="Name"><cellValueFactory><PropertyValueFactory property="name"/></cellValueFactory></TableColumn>
+          <TableColumn fx:id="dateCol" prefWidth="98.0" text="Date"><cellValueFactory><PropertyValueFactory property="date"/></cellValueFactory></TableColumn>
+            <TableColumn fx:id="timeCol" prefWidth="63.0" text="Time" ><cellValueFactory><PropertyValueFactory property="time"/></cellValueFactory></TableColumn>
+            <TableColumn fx:id="movieCol" prefWidth="124.0" text="Movie" ><cellValueFactory><PropertyValueFactory property="movieTitle"/></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="141.0" text="Name:" />
+      <TextField fx:id="name" layoutX="80.0" layoutY="136.0" prefHeight="27.0" prefWidth="187.0" />
+      <DatePicker fx:id="date" layoutX="76.0" layoutY="188.0" onAction="#onDateSelect" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="33.0" layoutY="195.0" text="Date:" />
+      <Label layoutX="24.0" layoutY="242.0" text="Movie:" />
+      <Button layoutX="629.0" layoutY="459.0" mnemonicParsing="false" onAction="#goBackBtn" text="Back" />
+      <Button layoutX="80.0" layoutY="459.0" mnemonicParsing="false" onAction="#updateBookingBtn" text="Update" />
+      <Button layoutX="156.0" layoutY="459.0" mnemonicParsing="false" onAction="#cancelBookingBtn" text="Cancel" />
+      <Button layoutX="91.0" layoutY="306.0" mnemonicParsing="false" onAction="#chooseSeatsBtn" prefHeight="59.0" prefWidth="116.0" text="Choose seats" />
+      <ChoiceBox fx:id="availableMovies" layoutX="76.0" layoutY="237.0" prefHeight="27.0" prefWidth="187.0" />
+      <Label fx:id="currentSeatsValue" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="389.0" prefHeight="21.0" prefWidth="147.0" text="Current seats: 0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.MainController">
+   <children>
+      <Button fx:id="scheduleButton" layoutX="295.0" layoutY="250.0" mnemonicParsing="false" onAction="#scheduleAction" prefHeight="47.0" prefWidth="111.0" text="Schedule" />
+      <Button fx:id="manageButton" layoutX="295.0" layoutY="185.0" mnemonicParsing="false" onAction="#manageAction" prefHeight="47.0" prefWidth="111.0" text="Manage" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+out
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.idea/misc.xml
+.idea/ThirdSemProgSWD.iml
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/ThirdSem.iml
+.idea/libraries/mysql_connector_java_5_1.xml
+.idea/vcs.xml
+ThirdSem.iml

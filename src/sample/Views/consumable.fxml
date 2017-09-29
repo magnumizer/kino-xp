@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="consumableAP" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.ConsumController">
+   <children>
+      <TableView fx:id="consumableTable" layoutX="97.0" layoutY="62.0" onMouseClicked="#onConsumableTableClick" prefHeight="200.0" prefWidth="506.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="255.0" text="Name" />
+          <TableColumn fx:id="priceCol" prefWidth="250.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="consumableName" layoutX="169.0" layoutY="313.0" />
+      <TextField fx:id="consumablePrice" layoutX="435.0" layoutY="313.0" />
+      <Label layoutX="116.0" layoutY="318.0" text="Name:" />
+      <Label layoutX="385.0" layoutY="318.0" text="Price:" />
+      <Button layoutX="107.0" layoutY="393.0" mnemonicParsing="false" onAction="#saveConsumable" text="Save" />
+      <Button layoutX="195.0" layoutY="393.0" mnemonicParsing="false" onAction="#updateConsumable" text="Update" />
+      <Button layoutX="299.0" layoutY="393.0" mnemonicParsing="false" onAction="#deleteConsumable" text="Delete" />
+      <Button layoutX="564.0" layoutY="393.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="adminPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddMovieController">
+   <children>
+      <Button layoutX="360.0" layoutY="455.0" mnemonicParsing="false" onAction="#onCreateMovieBtnPressed" text="Create Movie" />
+      <Button layoutX="14.0" layoutY="459.0" mnemonicParsing="false" onAction="#onBackBtnPressed" text="Back" />
+      <Label layoutX="14.0" layoutY="94.0" text="Name of the movie:" />
+      <Label layoutX="23.0" layoutY="189.0" text="Age requirement:" />
+      <Label layoutX="14.0" layoutY="247.0" text="Movie description:" />
+      <TextField fx:id="movieName" layoutX="138.0" layoutY="89.0" prefHeight="27.0" prefWidth="178.0" />
+      <ChoiceBox fx:id="ageChoice" layoutX="138.0" layoutY="185.0" prefHeight="27.0" prefWidth="178.0" />
+      <TextArea fx:id="movieDescription" layoutX="138.0" layoutY="248.0" prefHeight="91.0" prefWidth="178.0" />
+      <TextArea fx:id="movieActors" layoutX="138.0" layoutY="358.0" prefHeight="65.0" prefWidth="178.0" />
+      <Label layoutX="85.0" layoutY="357.0" text="Actors:" />
+      <Label layoutX="233.0" layoutY="33.0" prefHeight="45.0" prefWidth="235.0" text="Manage Movies">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="movieTable" layoutX="386.0" layoutY="164.0" onMouseClicked="#onMovieTableClick" prefHeight="239.0" prefWidth="270.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="ageCol" prefWidth="118.0" text="Age Requirement" />
+        </columns>
+      </TableView>
+      <Label layoutX="462.0" layoutY="142.0" text="Existing Movies:" />
+      <Button layoutX="495.0" layoutY="455.0" mnemonicParsing="false" onAction="#onUpdateBtnPressed" prefHeight="27.0" prefWidth="73.0" text="Update" />
+      <Label layoutX="6.0" layoutY="142.0" prefHeight="21.0" prefWidth="131.0" text="Duration (minutes)" />
+      <TextField fx:id="movieDuration" layoutX="138.0" layoutY="137.0" prefHeight="27.0" prefWidth="178.0" />
+      <Button layoutX="593.0" layoutY="455.0" mnemonicParsing="false" onAction="#onRemoveBtnPressed" prefHeight="31.0" prefWidth="86.0" text="Remove" />
+   </children>
+</AnchorPane>
